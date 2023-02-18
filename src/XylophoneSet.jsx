@@ -4,8 +4,6 @@ import XylophoneTile from './XylophoneTile'
 
 function XylophoneSet() {
 
-  let location = useLocation();
-
   return (
     <div className='flex items-center justify-center w-screen h-screen relative'>
       <Link to={"/"}  onClick={()=>{setTimeout(()=>{window.location.reload()},300)}} ><button className='absolute left-4 top-4 text-2xl'>&lt; Back</button></Link>
