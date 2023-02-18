@@ -7,7 +7,7 @@ function DrumSet() {
 
   return (
     <div className='studio drum-set flex items-center justify-center relative'>
-  <Link to={"/"}><button className='absolute left-4 top-4 text-2xl'>&lt; Back</button></Link>
+  <Link to={"/"}  onClick={()=>{setTimeout(()=>{window.location.reload()},300)}}><button className='absolute left-4 top-4 text-2xl'>&lt; Back</button></Link>
       {/* Hihat*/}
       <DrumPad
         tileId={"l"}

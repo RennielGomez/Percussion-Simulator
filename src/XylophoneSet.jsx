@@ -8,7 +8,7 @@ function XylophoneSet() {
 
   return (
     <div className='flex items-center justify-center w-screen h-screen relative'>
-      <Link to={"/"}><button className='absolute left-4 top-4 text-2xl'>&lt; Back</button></Link>
+      <Link to={"/"}  onClick={()=>{setTimeout(()=>{window.location.reload()},300)}} ><button className='absolute left-4 top-4 text-2xl'>&lt; Back</button></Link>
       <XylophoneTile tileId={"q"} audioPath={"/sounds/xylophone/Mallet C4.wav"} letter={"Q"} color={"bg-indigo-400"} h={"h-40"} />
       <XylophoneTile tileId={"w"} audioPath={"/sounds/xylophone/Mallet Cs4.wav"} letter={"W"} color={"bg-blue-700"} h={"h-44"} />
       <XylophoneTile tileId={"e"} audioPath={"/sounds/xylophone/Mallet D4.wav"} letter={"E"} color={"bg-sky-600"} h={"h-48"} />
