@@ -8,7 +8,7 @@ function PianoSet() {
 
     return (
         <div className='flex items-center justify-center'>
-            <Link to={"/"}><button className='absolute left-4 top-4 text-2xl'>&lt; Back</button></Link>
+            <Link to={"/"} onClick={()=>{setTimeout(()=>{window.location.reload()},300)}}><button className='absolute left-4 top-4 text-2xl'>&lt; Back</button></Link>
             <div className='flex relative bg-gray-900 mt-28 px-8 pt-4 rounded-md shadow-lg shadow-black' style={{ height: "400px" }}>
                 <div className='flex relative'>
                     <WhiteTiles tileId={"a"} audioPath={"/sounds/piano/Octave-3/3C.ogg"} note={'A'} />
